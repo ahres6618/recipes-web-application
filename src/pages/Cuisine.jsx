@@ -33,17 +33,16 @@ function Cuisine() {
   )
 }
 
-const Grid = styled.div`
+const Grid = styled.div `
 display:grid;
-grid-template-columns: repeat(auto-fit, minmax(20rem,1fr))
+grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
 grid-gap:3rem;
-
-`
+`;
 
 const Card =styled.div`
 img{
     width:100%;
-    border-redius:2rem;
+    border-radius:2rem;
 }
 
 a{
@@ -53,5 +52,5 @@ h4{
     text-align:center;
     padding:1rem;
 }
-`
+`;
 export default Cuisine
