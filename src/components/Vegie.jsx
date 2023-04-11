@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components"
+import { Link } from "react-router-dom";
 
 import {Splide, SplideSlide} from "@splidejs/react-splide"
 import '@splidejs/react-splide/css';
@@ -44,10 +45,11 @@ function Vegie() {
                 return(
                   <SplideSlide>
                     <Card key={recipe.id}>
+                    <Link to={"/recipe/"+recipe.id}>
                     <p>{recipe.title} </p>
                     <Gradient />
                     <img src={recipe.image} alt={recipe.title} />
-                    
+                    </Link>
                     </Card>
                     
                     </SplideSlide>
